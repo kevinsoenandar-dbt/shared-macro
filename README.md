@@ -180,7 +180,7 @@ from {{ ref("raw_data") }}
 
 ### Package Development
 
-1. **Organize by Functionality**: Group related macros in subdirectories
+1. **Organise by Functionality**: Group related macros in subdirectories
 2. **Use Descriptive Names**: Make macro purposes clear from names
 3. **Document Parameters**: Include clear parameter documentation
 4. **Version Appropriately**: Use semantic versioning for releases
@@ -218,4 +218,4 @@ from {{ ref("raw_data") }}
 5. **Modify macros and tests to fit your needs**
 6. **Publish your package for team consumption**
 
-This pattern provides a robust foundation for building and maintaining shared dbt utilities across your organization.
+This pattern provides a robust foundation for building and maintaining shared dbt utilities across your organisation.
