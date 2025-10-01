@@ -1,0 +1,15 @@
+name: 'shared_macro'
+version: '1.0.0'
+
+profile: 'shared_macro'
+
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+target-path: "target"
+log-path: "logs"
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"

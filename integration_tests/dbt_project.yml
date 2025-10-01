@@ -1,0 +1,23 @@
+name: 'shared_macro_integration_tests'
+version: '1.0.0'
+
+profile: 'shared_macro'
+
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+target-path: "target"
+log-path: "logs"
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+models:
+  shared_macro_integration_tests:
+    +schema: integration_tests
+    +materialized: view
+
+vars:
+  dw_columns: []

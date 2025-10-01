@@ -1,0 +1,16 @@
+models:
+  - name: stg_customers
+    data_tests:
+      - assert_column_names:
+          expected_column_names:
+            - customer_id
+            - first_name
+            - last_name
+            - email
+            - gender
+            - ip_address_v4
+    columns:
+      - name: customer_id
+        data_tests:
+          - assert_column_value_length:
+              length: 8
