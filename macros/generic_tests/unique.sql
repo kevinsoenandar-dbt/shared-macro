@@ -1,9 +1,3 @@
-{% macro test_unique(model, column_name, column_names=[], where='1=1') %}
-
-    {{ return(adapter.dispatch('test_unique', 'shared_macro')(model, column_name, column_names, where)) }}
-
-{% endmacro %}
-
 {% macro default__test_unique(model, column_name, column_names=[], where='1=1') %}
 
     {% set column_names = [column_name] if (column_names | length == 0) else column_names %}
