@@ -1,10 +1,4 @@
-{% test unique(model, column_name, column_names=[], where='1=1') %}
-
-    {{ return(adapter.dispatch('test_unique', 'dbt')(model, column_name, column_names, where)) }}
-
-{% endtest %}
-
-{% macro default__test_unique(model, column_name, column_names=[], where='1=1') %}
+{% macro test_unique(model, column_name, column_names=[], where='1=1') %}
 
     {% set column_names = [column_name] if (column_names | length == 0) else column_names %}
 
