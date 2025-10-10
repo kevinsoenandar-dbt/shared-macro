@@ -2,7 +2,7 @@
 
     {{ return(adapter.dispatch('test_unique', 'shared_macro')(model, column_name, column_names, where)) }}
 
-{% endtest %}
+{% endmacro %}
 
 {% macro default__unique(model, column_name, column_names=[], where='1=1') %}
 
