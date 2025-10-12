@@ -9,6 +9,10 @@ models:
             - email
             - gender
             - ip_address_v4
+      - unique:
+          arguments:
+            column_names: 
+              - customer_id
     columns:
       - name: customer_id
         data_tests:
