@@ -9,7 +9,7 @@ models:
             - email
             - gender
             - ip_address_v4
-      - shared_macro.unique:
+      - unique:
           arguments:
             column_names: 
               - customer_id
